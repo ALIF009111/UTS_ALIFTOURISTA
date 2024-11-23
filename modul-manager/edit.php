@@ -38,7 +38,7 @@ $data = mysqli_fetch_array($edit);
                 <h3 class="float-start">Edit Data Karyawan</h3>
                 <span class="float-end"><a class="btn btn-primary"><i class="fa-solid fa-plus"></i>Tambah data</a></span>
             </div>
-            
+
             <div class="card-body">
             <form action="update.php" method="post">
                 <input type="hidden" name="id_karyawan" value="<?=$data['id_karyawan']?>">
@@ -52,6 +52,18 @@ $data = mysqli_fetch_array($edit);
                 <label for="exampleInputPassword1" class="form-label">Jabatan</label>
                 <input type="text" value="<?=$data['jabatan']?>" name="jabatan" class="form-control" id="exampleInputPassword1">
             </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Tanggal masuk</label>
+                <input type="text" value="<?=$data['tanggal_masuk']?>" name="jabatan" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Gaji</label>
+                <input type="text" value="<?=$data['gaji']?>" name="gaji" class="form-control" id="exampleInputPassword1">
+            </div>
+
+
             <button type="submit" class="btn btn-primary">Update</button>
             </form>
             </div>
