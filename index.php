@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project is62</title>
+    <title>UTS_ALIFTOURISTA</title>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
     <div class="col-6 m-auto">
     <div class="card">
   <div class="card-header">
-    <h3>Sistem Informasi Mahasiswa</h3>
+    <h3>TABEL KARYAWAN</h3>
   </div>
 
   <div class="card-body">
