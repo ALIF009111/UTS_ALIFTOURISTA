@@ -3,10 +3,10 @@
 include("../koneksi.php");
 
 // 2. menggambil id yang akan di edit
-$id = $_GET['nama_karyawan'];
+$id_karyawan = $_GET[''];
 
 // 3. menngambil semua record data berdasarkan id yang dipilih
-$ambil = "SELECT * FROM karyawan WHERE id_karyawan='$id' ";
+$ambil = "SELECT * FROM karyawan WHERE id_karyawan='$id_karyawan' ";
 
 // 4.menjalankan query
 $edit = mysqli_query($koneksi,$ambil);
@@ -44,7 +44,7 @@ $data = mysqli_fetch_array($edit);
 
                 <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nama Karyawan</label>
-                <input type="text" readonly value="<?=$data['nama_karyawan']?>" name="nama_karyawan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="text" value="<?=$data['nama_karyawan']?>" name="nama_karyawan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
 
             <div class="mb-3">
