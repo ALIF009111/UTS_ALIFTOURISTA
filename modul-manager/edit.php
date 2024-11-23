@@ -3,7 +3,7 @@
 include("../koneksi.php");
 
 // 2. menggambil id yang akan di edit
-$id_karyawan = $_GET[''];
+$id_karyawan = $_GET['id_karyawan'];
 
 // 3. menngambil semua record data berdasarkan id yang dipilih
 $ambil = "SELECT * FROM karyawan WHERE id_karyawan='$id_karyawan' ";
@@ -11,7 +11,7 @@ $ambil = "SELECT * FROM karyawan WHERE id_karyawan='$id_karyawan' ";
 // 4.menjalankan query
 $edit = mysqli_query($koneksi,$ambil);
 
-// 5. memisahkan record data berdasarkan kolom/field
+// 5. memisahkan record data berdasarkan kolom/field        
 $data = mysqli_fetch_array($edit);
 
 ?>
@@ -40,7 +40,7 @@ $data = mysqli_fetch_array($edit);
             </div>
             <div class="card-body">
             <form action="update.php" method="post">
-                <input type="hidden" name="id" value="<?=$data['id_karyawan']?>">
+                <input type="hidden" name="id_karyawan" value="<?=$data['id_karyawan']?>">
 
                 <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nama Karyawan</label>
