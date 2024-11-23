@@ -38,6 +38,7 @@ $data = mysqli_fetch_array($edit);
                 <h3 class="float-start">Edit Data Karyawan</h3>
                 <span class="float-end"><a class="btn btn-primary"><i class="fa-solid fa-plus"></i>Tambah data</a></span>
             </div>
+            
             <div class="card-body">
             <form action="update.php" method="post">
                 <input type="hidden" name="id_karyawan" value="<?=$data['id_karyawan']?>">
