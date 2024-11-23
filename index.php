@@ -22,8 +22,30 @@
 
   <div class="card-body">
   
-   <h4>Selamat datang!</h4>
-   <p>Tuliskan kata-kata hari ini</p>
+  <div class="list-group">
+  <a href="navbar.php" class="list-group-item list-group-item-action active">
+    Cras justo odio
+  </a>
+
+  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+  <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+
+ <br></br>
+
+  <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+
+</div>
 
   </div>
 
