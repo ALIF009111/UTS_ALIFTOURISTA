@@ -3,7 +3,7 @@
 include("../koneksi.php");
 
 // 2. menggambil id yang akan di edit
-$id_karyawan = $_GET['id_karyawan'];
+$id_karyawan = $_POST['id_karyawan'];
 
 // 3. menngambil semua record data berdasarkan id yang dipilih
 $ambil = "SELECT * FROM karyawan WHERE id_karyawan='$id_karyawan' ";
