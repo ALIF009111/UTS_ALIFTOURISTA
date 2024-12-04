@@ -3,12 +3,12 @@ include("../koneksi.php");
 
 
 
-$id_karyawan = $_GET['xyz'];
+$id= $_GET['xyz'];
 
 
 // jangan lupa ganti variable
 
-$hapus ="DELETE FROM WHERE id_karyawan='$id_karyawan'";
+$hapus ="DELETE FROM WHERE id='$id'";
 
 
 $proses = mysqli_query($koneksi,$hapus);

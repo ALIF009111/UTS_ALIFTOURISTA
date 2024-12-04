@@ -69,9 +69,9 @@
       <td><?=$data['gaji']?></td>
       <td>
 
-        <a class="btn btn-success" href="edit.php"><i class="fa-solid fa-pen-to-square"></i></a>
+        <a class="btn btn-success" href="edit.php?id=<?=$data['id']?>"><i class="fa-solid fa-pen-to-square"></i></a>
         
-        <button type="button" class="btn btn-danger btm-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id_karyawan']?>">
+        <button type="button" class="btn btn-danger btm-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id']?>">
         <i class="fa-solid fa-trash"></i>
 </button>
 
@@ -80,11 +80,11 @@
 
 
 
-      <div class="modal fade" id="hapus<?=$data['id_karyawan']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="hapus<?=$data['id']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
       <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id_karyawan="exampleModalLabel">Yakin?</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Yakin?</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
@@ -96,7 +96,7 @@
 
       <div class="modal-footer">
         <button type="button" class="btn btn-warning" data-bs-dismiss="modal">TIDAK</button>
-        <a href="hapus.php?xyz=<?=$data['id_karyawan']?>" class="btn btn-danger">YA</a>
+        <a href="hapus.php?xyz=<?=$data['id']?>" class="btn btn-danger">YA</a>
       </div>
       </div>
       </div>
